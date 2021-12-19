@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Animetion</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <div class="navbar">
+            <div class="logo">
+                <img src="./pic/logo.png" alt="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li>Studio</li>
+                    <li>Parteners</li>
+                    <li>Midia</li>
+                    <li>User</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="circle-box">
+            <svg height="402" width="402">
+                <circle r="200" cx="201" cy="201" stroke-width="1px" stroke="gray" fill="none" />
+            </svg>
+            <svg height="402" width="402">
+                <circle r="200" cx="201" cy="201" stroke-width="1px" stroke="#fff" fill="none" id="svgCircle" />
+            </svg>
+            <div>
+                <span id="step1"></span>
+                <span id="step2"></span>
+                <span id="step3"></span>
+                <span id="step4"></span>
+                <span id="step5"></span>
+            </div>
+            <div class="user-box" id="userBox">
+                <div class="user">
+                    <img src="./pic/user-vishal.png" alt="user-pic">
+                    <h1>Vishal Lazrus</h1>
+                    <p>I am from Bihar.</p>
+                    <div class="social-links">
+                        <img src="./pic/facebook.png" alt="">
+                        <img src="./pic/instagram.png" alt="">
+                        <img src="./pic/linkedin.png" alt="">
+                        <img src="./pic/twitter.png" alt="">
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="./pic/user.jpg" alt="user-pic">
+                    <h1>Somenath Choudhury</h1>
+                    <p>From West Bengal</p>
+                    <div class="social-links">
+                        <img src="./pic/facebook.png" alt="">
+                        <img src="./pic/instagram.png" alt="">
+                        <img src="./pic/linkedin.png" alt="">
+                        <img src="./pic/twitter.png" alt="">
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="./pic/user.jpg" alt="user-pic">
+                    <h1>Ritesh Kumar Shingh</h1>
+                    <p>From Bihar.</p>
+                    <div class="social-links">
+                        <img src="./pic/facebook.png" alt="">
+                        <img src="./pic/instagram.png" alt="">
+                        <img src="./pic/linkedin.png" alt="">
+                        <img src="./pic/twitter.png" alt="">
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="./pic/user.jpg" alt="user-pic">
+                    <h1>Gulabchand</h1>
+                    <p>From Bihar.</p>
+                    <div class="social-links">
+                        <img src="./pic/facebook.png" alt="">
+                        <img src="./pic/instagram.png" alt="">
+                        <img src="./pic/linkedin.png" alt="">
+                        <img src="./pic/twitter.png" alt="">
+                    </div>
+                </div>
+                <div class="user">
+                    <img src="./pic/user.jpg" alt="user-pic">
+                    <h1>xyz</h1>
+                    <p>From ABC.</p>
+                    <div class="social-links">
+                        <img src="./pic/facebook.png" alt="">
+                        <img src="./pic/instagram.png" alt="">
+                        <img src="./pic/linkedin.png" alt="">
+                        <img src="./pic/twitter.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var svgCircle = document.getElementById("svgCircle")
+        var step1 = document.getElementById("step1");
+        var step2 = document.getElementById("step2");
+        var step3 = document.getElementById("step3");
+        var step4 = document.getElementById("step4");
+        var step5 = document.getElementById("step5");
+        var main = document.getElementById("main");
+        var userBox = document.getElementById("userBox");
+
+
+
+
+
+
+        main.style.backgroundImage = "url(pic/img-1.jpg)";
+
+        step1.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "1004"
+            main.style.backgroundImage = "url(pic/img-1.jpg)";
+            userBox.style.top = "-350px";
+        });
+
+        step2.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "753"
+            main.style.backgroundImage = "url(pic/img-2.jpg)";
+            userBox.style.top = "-800px";
+        });
+
+        step3.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "502"
+            main.style.backgroundImage = "url(pic/img-3.jpg)";
+            userBox.style.top = "-1250px";
+        });
+
+        step4.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "251"
+            main.style.backgroundImage = "url(pic/img-4.jpg)";
+            userBox.style.top = "-1700px";
+        });
+
+        step5.addEventListener('click', () => {
+            svgCircle.style.strokeDashoffset = "0"
+            main.style.backgroundImage = "url(pic/img-5.jpg)";
+            userBox.style.top = "100px";
+        });
+    </script>
+</body>
+
+</html>
